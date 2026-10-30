@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CallPilot · Règles de confidentialité</title>
+  <style>
+    :root { --navy: #0A1226; --blue: #2563EB; --text: #334155; --muted: #64748B; --line: #E2E8F0; --bg: #F5F7FB; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 "Segoe UI", system-ui, -apple-system, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 56px 20px 72px; }
+    .back { font-size: 14px; }
+    h1 { color: var(--navy); font-size: 28px; line-height: 1.2; margin: 20px 0 6px; }
+    .date { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+    h2 { color: var(--navy); font-size: 18px; margin: 32px 0 8px; }
+    ul { padding-left: 20px; }
+    a { color: var(--blue); }
+    footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="./">← CallPilot</a>
+  <h1>Règles de confidentialité</h1>
+  <p class="date">En vigueur au 30 octobre 2026</p>
+
+  <p>CallPilot est un outil interne du support de niveau 2 de VAV Connect. Il s’exécute sur l’ordinateur Windows de
+  chaque technicien. Ces règles décrivent les données auxquelles il accède et ce qu’il en fait.</p>
+
+  <h2>Données Google utilisées</h2>
+  <p>CallPilot n’accède au compte Google d’un technicien qu’après son autorisation explicite, et seulement pour :</p>
+  <ul>
+    <li><strong>Google Agenda</strong> (<code>calendar.events</code>) : lire les événements de l’agenda pour repérer les
+      plages libres ; créer, modifier et supprimer les événements de rappel que CallPilot crée lui-même (créneaux
+      proposés au client, rendez-vous confirmés).</li>
+    <li><strong>Google Contacts</strong> (<code>contacts</code>) : créer un contact portant la référence d’une demande
+      et le numéro de téléphone du client, puis le supprimer à la clôture de la demande.</li>
+  </ul>
+  <p>CallPilot ne lit pas les e-mails, ne modifie pas les événements ni les contacts qu’il n’a pas créés, et
+  n’utilise les données Google que pour ces fonctions.</p>
+
+  <h2>Stockage</h2>
+  <ul>
+    <li>Toutes les données de CallPilot (demandes suivies, créneaux, historique, réglages) sont enregistrées
+      uniquement sur l’ordinateur du technicien.</li>
+    <li>Le jeton d’accès Google est chiffré sur cet ordinateur avec la protection des données de Windows.</li>
+    <li>Aucune donnée n’est envoyée à VAV Connect, à l’éditeur de l’outil ni à un tiers ; CallPilot n’utilise aucun
+      service de statistiques ni de publicité.</li>
+  </ul>
+
+  <h2>Respect de la politique de Google</h2>
+  <p>L’utilisation et le transfert des informations reçues des API Google respectent les
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">règles relatives aux données utilisateur
+  des services d’API Google</a>, y compris les exigences d’utilisation limitée.</p>
+
+  <h2>Retirer l’accès</h2>
+  <p>Chaque technicien peut retirer l’accès de CallPilot à tout moment depuis CallPilot (Paramètres) ou depuis
+  <a href="https://myaccount.google.com/permissions">la page des accès de son compte Google</a>. Supprimer le dossier
+  de données de CallPilot sur l’ordinateur efface toutes ses données locales.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:supportn2vavconnect@gmail.com">supportn2vavconnect@gmail.com</a></p>
+
+  <footer>CallPilot · Support de niveau 2 · VAV Connect</footer>
+</main>
+</body>
+</html>
