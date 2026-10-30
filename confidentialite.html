@@ -30,9 +30,12 @@
   <h2>Données Google utilisées</h2>
   <p>CallPilot n’accède au compte Google d’un technicien qu’après son autorisation explicite, et seulement pour :</p>
   <ul>
-    <li><strong>Google Agenda</strong> (<code>calendar.events</code>) : lire les événements de l’agenda pour repérer les
-      plages libres ; créer, modifier et supprimer les événements de rappel que CallPilot crée lui-même (créneaux
-      proposés au client, rendez-vous confirmés).</li>
+    <li><strong>Adresse e-mail du compte</strong> (<code>openid</code>, <code>email</code>) : afficher dans CallPilot le
+      compte Google relié.</li>
+    <li><strong>Google Agenda</strong> (<code>calendar.events</code>) : lire les événements de l’agenda principal pour
+      repérer les plages libres ; créer, modifier et supprimer les événements de rappel que CallPilot crée lui-même
+      (créneaux proposés au client, rendez-vous confirmés). Ces événements portent seulement la référence de la
+      demande : le numéro de téléphone du client n’y figure jamais.</li>
     <li><strong>Google Contacts</strong> (<code>contacts</code>) : créer un contact portant la référence d’une demande
       et le numéro de téléphone du client, puis le supprimer à la clôture de la demande.</li>
   </ul>
